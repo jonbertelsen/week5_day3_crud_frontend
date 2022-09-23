@@ -1,0 +1,40 @@
+###
+GET http://localhost:3333/api/users/
+Accept: application/json
+
+###
+GET http://localhost:3333/api/users/110
+Accept: application/json
+
+###
+GET http://localhost:3333/api/users/1111111111
+Accept: application/json
+
+###
+POST http://localhost:3333/api/users/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "age": 23,
+  "name": "Peter Pan",
+  "gender": "male",
+  "email": "peters@pan.com"
+}
+
+###
+PUT http://localhost:3333/api/users/115
+Content-Type: application/json
+Accept: application/json
+
+{
+  "age": 24,
+  "name": "Peter Pop",
+  "gender": "male",
+  "email": "peters@pan.com"
+}
+
+###
+
+DELETE http://localhost:3333/api/users/115
+Accept: application/json
